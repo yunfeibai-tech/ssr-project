@@ -1,0 +1,11 @@
+/**
+* @Author: yunfei_bai
+* @Date: 2018/7/11 8:48
+* @Description:
+* */
+.page-enter-active, .page-leave-active {
+  transition: opacity .5s;
+}
+.page-enter, .page-leave-active {
+  opacity: 0;
+}
