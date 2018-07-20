@@ -8,7 +8,7 @@
       background-color="#545c64"
       text-color="#fff"
       active-text-color="#ffd04b">
-      <el-menu-item index="index">处理中心</el-menu-item>
+      <el-menu-item index="index">用户列表</el-menu-item>
       <el-menu-item index="detail">详情页</el-menu-item>
     </el-menu>
     <div class="content">

@@ -3,8 +3,7 @@
  * @Date: 2018/7/11 15:46
  * @Description:
  * */
-import nav from '~/components/nav'
-import axios from 'axios'
+import axios from '~/plugins/axios'
 export default {
   head: {
     title: '首页',
@@ -30,7 +29,8 @@ export default {
   mounted(){
   },
   async asyncData () {
-    let { data } = await axios.get('/api/userList')
+    let { data } = await axios.get('/userList');
+    console.log(data)
     return {
       text:  data.userList,
     }
