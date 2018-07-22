@@ -57,7 +57,8 @@ module.exports = {
     },
   ],
   plugins: [
-    '~plugins/element-ui'
+    '~plugins/element-ui',
+    '~plugins/filters'
   ],
   css: [
     // 全部引用的时候需要用到

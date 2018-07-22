@@ -17,7 +17,17 @@ export default {
   methods:{
     clickButton(){
       console.log(11111)
-    }
+    },
+    formatterTime(row, column) {
+      return row.address;
+    },
+    filterTag(value, row) {
+      return row.tag === value;
+    },
+    filterHandler(value, row, column) {
+      const property = column['property'];
+      return row[property] === value;
+    },
   },
   data(){
     return{
@@ -25,14 +35,14 @@ export default {
       text:''
     }
   },
+
   middleware:'userAuth',
   mounted(){
   },
   async asyncData () {
     let { data } = await axios.get('/userList');
-    console.log(data)
     return {
-      text:  data.userList,
+      tableData:  data.userList,
     }
   },
 }
