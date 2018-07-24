@@ -9,10 +9,8 @@ export  default function ({ route,req,res,redirect}) {
   let isServer = process.server;
   var redirectURL="/login";
   var token;
-  console.log(isClient,isServer)
   if(isServer){
-    let cookies = uitls.getCookieInServer('token')
-    console.log(cookies);
+
   }
   if (!token) {
     // redirect(redirectURL)

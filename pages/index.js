@@ -4,6 +4,7 @@
  * @Description:
  * */
 import axios from '~/plugins/axios'
+import {formatDate} from '../plugins/filters'
 export default {
   head: {
     title: '首页',
@@ -24,25 +25,20 @@ export default {
     filterTag(value, row) {
       return row.tag === value;
     },
-    filterHandler(value, row, column) {
-      const property = column['property'];
-      return row[property] === value;
-    },
   },
   data(){
     return{
       radio: '1',
-      text:''
+      text:'',
+      tableData:[]
     }
   },
 
   middleware:'userAuth',
   mounted(){
-  },
-  async asyncData () {
-    let { data } = await axios.get('/userList');
-    return {
-      tableData:  data.userList,
-    }
+    var _this =this;
+    axios.get('/api/userList').then((res) => {
+      _this.tableData = res.data.userList
+    })
   },
 }

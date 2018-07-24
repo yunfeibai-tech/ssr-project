@@ -9,8 +9,10 @@
           label="关注时间"
           sortable
           width="180"
-          :filter-method="filterHandler"
         >
+          <template slot-scope="scope">
+            <span>{{ scope.row.subscribe_time | formatDate }}</span>
+          </template>
         </el-table-column>
         <el-table-column
           prop="nickname"

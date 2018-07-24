@@ -5,9 +5,7 @@
   </div>
 </template>
 <script>
-  export default{
-
-  }
+  module.exports = require('./index.js')
 </script>
 <style lang="less" scoped>
   p{

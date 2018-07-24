@@ -24,16 +24,6 @@ module.exports = {
     /*
     ** Run ESLint on save
     */
-    extend (config, { isDev, isClient }) {
-      if (isDev && isClient) {
-        config.module.rules.push({
-          enforce: 'pre',
-          test: /\.(js|vue)$/,
-          loader: 'eslint-loader',
-          exclude: /(node_modules)/
-        })
-      }
-    },
     vender:[
       'element-ui',
       'axios'
@@ -55,6 +45,22 @@ module.exports = {
       test: /\.less/,
       loader: 'vue-style-loader!less-loader'
     },
+    {
+      test: /\.(png|jpe?g|gif|svg)$/,
+      loader: 'url-loader',
+      query: {
+        limit: 1000, // 1KB
+        name: 'img/[name].[hash:7].[ext]'
+      }
+    },
+    {
+      test: /\.(woff2?|eot|ttf|otf)(\?.*)?$/,
+      loader: 'url-loader',
+      query: {
+        limit: 1000, // 1 KB
+        name: 'fonts/[name].[hash:7].[ext]'
+      }
+    }
   ],
   plugins: [
     '~plugins/element-ui',
@@ -75,7 +81,7 @@ module.exports = {
       target: 'http://127.0.0.1:3000',
       changeOrigin: true,  //是否跨域
       "secure": false,
-      pathRewrite: { '^/api/': '' }
+      pathRewrite: { '^/api/': '/' }
     }
   }
 }
