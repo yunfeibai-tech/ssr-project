@@ -4,6 +4,7 @@
  * @Description:
  * */
 import axios from '~/plugins/axios'
+import * as d3 from 'd3'
 import {formatDate} from '../plugins/filters'
 export default {
   head: {
@@ -34,7 +35,7 @@ export default {
     }
   },
 
-  middleware:'userAuth',
+  // middleware:'userAuth',
   mounted(){
     var _this =this;
     axios.get('/api/userList').then((res) => {

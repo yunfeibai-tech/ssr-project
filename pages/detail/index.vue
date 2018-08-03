@@ -1,6 +1,5 @@
 <template>
   <div>
-
     <p><span>详情页</span></p>
   </div>
 </template>

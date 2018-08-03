@@ -16,7 +16,7 @@ module.exports = {
   /*
   ** Customize the progress bar color
   */
-  loading: { color: 'red' },
+  loading: { color: '#0a8481' },
   /*
   ** Build configuration
   */
@@ -26,7 +26,8 @@ module.exports = {
     */
     vender:[
       'element-ui',
-      'axios'
+      'axios',
+      'd3'
     ],
   },
   babel:{
@@ -64,7 +65,8 @@ module.exports = {
   ],
   plugins: [
     '~plugins/element-ui',
-    '~plugins/filters'
+    '~plugins/filters',
+    '~plugins/d3'
   ],
   css: [
     // 全部引用的时候需要用到

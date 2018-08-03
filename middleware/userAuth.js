@@ -13,6 +13,6 @@ export  default function ({ route,req,res,redirect}) {
 
   }
   if (!token) {
-    // redirect(redirectURL)
+    redirect(redirectURL)
   }
 }
