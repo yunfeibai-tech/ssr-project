@@ -1,16 +1,13 @@
 <template>
   <div>
-    <p><span>详情页</span></p>
+    <el-card class="box-card">
+      <div id="bar"></div>
+    </el-card>
   </div>
 </template>
 <script>
   module.exports = require('./index.js')
 </script>
 <style lang="less" scoped>
-  p{
-    span{
-      color: #fff;
-    }
-    background: red;
-  }
+  @import "index";
 </style>

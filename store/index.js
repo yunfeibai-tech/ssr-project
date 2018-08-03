@@ -9,9 +9,9 @@ import Vuex from 'vuex'
 Vue.use(Vuex);
 
 // import loginInfo from './login'
-
+//
 // export default new Vuex.Store({
 //   modules:{
-//     // loginInfo
+//     loginInfo
 //   }
 // })
