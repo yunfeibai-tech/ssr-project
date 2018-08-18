@@ -5,7 +5,4 @@
  * */
 import Vue from 'vue'
 import * as d3 from 'd3'
-console.log('---------------')
-console.log(d3)
-console.log('---------------')
 Vue.use(d3);
