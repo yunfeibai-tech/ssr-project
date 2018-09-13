@@ -40,7 +40,7 @@ export default {
     axios.get('/api/user/getList').then((res) => {
       res.data.forEach((obj) =>{
         obj.address = obj.country+obj.province+obj.city
-      })
+      });
       _this.tableData = res.data
     })
   },

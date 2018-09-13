@@ -5,7 +5,7 @@
  * */
 
 import * as axios from 'axios'
-let options = {}
+let options = {};
 if (process.server) {
   options.baseURL =`http://127.0.0.1:3000`
   // options.baseURL = `http://${process.env.HOST || 'http://127.0.0.1:3000'}:${process.env.PORT || 3000}`

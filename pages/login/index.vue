@@ -5,7 +5,7 @@
           <img src="../../assets/logo.png" >
         </div>
         <div class="loginPanel">
-          <div class="warrp">
+          <div class="warp">
             <div class="left">
               <div class="content">
                 <div class="sign">Welcome</div>

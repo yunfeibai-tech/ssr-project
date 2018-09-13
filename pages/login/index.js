@@ -24,7 +24,7 @@ export default {
         let params ={
           account:this.account,
           password:this.password
-        }
+        };
         axios.post('/api/login',params).then((res) => {
           console.log(res.data);
           this.$router.push('/')

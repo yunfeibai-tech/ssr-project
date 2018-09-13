@@ -4,11 +4,12 @@ import moment from 'moment'
 export function formatDate (date) {
   return moment(date).format('YYYY-MM-DD HH:mm:ss')
 }
+// noinspection JSUnusedGlobalSymbols
 let filters = {
   formatDate
-}
+};
 
 Object.keys(filters).forEach(key => {
   Vue.filter(key, filters[key])
-})
+});
 export default filters

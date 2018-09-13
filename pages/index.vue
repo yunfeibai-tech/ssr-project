@@ -39,7 +39,7 @@
 </template>
 
 <script>
-  module.exports = require('./index.js')
+  module.exports = require('./index.js');
 </script>
 
 <style lang="less" scoped>
