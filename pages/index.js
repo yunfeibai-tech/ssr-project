@@ -36,7 +36,7 @@ export default {
 
   // middleware:'userAuth',
   mounted(){
-    var _this =this;
+    let _this =this;
     axios.get('/api/user/getList').then((res) => {
       res.data.forEach((obj) =>{
         obj.address = obj.country+obj.province+obj.city

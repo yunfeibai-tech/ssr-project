@@ -10,7 +10,6 @@ export  default function ({ route,req,res,redirect}) {
   var redirectURL="/login";
   var token;
   if(isServer){
-
   }
   if (!token) {
     redirect(redirectURL)
