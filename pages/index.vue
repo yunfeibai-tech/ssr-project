@@ -1,3 +1,10 @@
+<!--
+ * @Name: 文件名称
+ * @Description: 该文件描述
+ * @Author: baiyunfei
+ * @Date: 2021-06-09 11:01:17
+ * @Editors: baiyunfei
+-->
 <template>
   <div>
     <div class="tableList">
@@ -29,7 +36,7 @@
               取消关注
             </span>
             <span v-else>
-              已关注
+              已关注1111
             </span>
           </template>
         </el-table-column>
